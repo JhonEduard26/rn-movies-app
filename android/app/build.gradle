@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.moviesapp"
+    namespace "com.jhoneduard26.moviesapp"
     defaultConfig {
-        applicationId "com.moviesapp"
+        applicationId "com.jhoneduard26.moviesapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

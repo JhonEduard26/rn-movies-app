@@ -1,17 +1,21 @@
 export interface NowPlayingResponse {
   dates:         Dates;
   page:          number;
-  results:       Movie[];
+  results:       Result[];
   total_pages:   number;
   total_results: number;
 }
+
+export interface PopularResponse extends Omit<NowPlayingResponse, "dates"> {}
+export interface TopRatedResponse extends Omit<NowPlayingResponse, "dates"> {}
+export interface UpcomingResponse extends NowPlayingResponse {}
 
 export interface Dates {
   maximum: Date;
   minimum: Date;
 }
 
-export interface Movie {
+export interface Result {
   adult:             boolean;
   backdrop_path:     string;
   genre_ids:         number[];
